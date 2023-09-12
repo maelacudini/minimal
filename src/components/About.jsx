@@ -20,10 +20,7 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vel
             earum deleniti harum? Quam eveniet, nesciunt debitis iste
             repudiandae obcaecati sint, illum accusantium quibusdam animi culpa
-            non accusamus aliquid atque. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Hic in delectus libero dolor omnis reprehenderit
-            ea aut iure consequatur! Nisi explicabo consequatur, ullam eum illo
-            ipsum aliquid non tempora incidunt!
+            non accusamus aliquid atque.
           </p>
         </div>
       </div>
@@ -31,7 +28,6 @@ const About = () => {
       <Skills />
       <Approach />
       <Clients />
-      <hr />
     </div>
   );
 };
