@@ -4,14 +4,9 @@
 }
 
 /*navbar*/
-.navbar {
-  position: sticky;
-  top: 0px !important;
-  margin-top: 20px;
-  background-color: black;
-  z-index: 100;
-  display: flex;
-  align-items: center !important;
+.nav {
+  padding: 40px !important;
+  margin-bottom: 100px;
 }
 
 .brandTitle {
@@ -136,10 +131,16 @@
 }
 
 /*contact*/
+.contactContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .cardContact {
   margin-top: 40px;
   border-radius: 40px;
   padding: 40px;
+  width: 100%;
   background-color: rgba(64, 64, 64, 0.6);
   position: relative;
   display: flex;
@@ -167,7 +168,7 @@
 }
 
 .socials > a {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .socials > a:last-child {
@@ -200,6 +201,28 @@
     font-size: 40px;
   }
 
+  /*nav*/
+  .nav {
+    position: relative;
+    height: 100vh;
+  }
+
+  .brandTitle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0px;
+  }
+
+  .navpills {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
   /*navbar*/
   .navbar {
     top: 0px !important;
@@ -213,11 +236,11 @@
 
   /*work*/
   .brandTitle {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .workTitle {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .card {
@@ -255,7 +278,7 @@
   }
 
   .icon {
-    margin: 0px 20px 0px 0px;
+    margin: 0px 10px 0px 0px;
   }
 
   .socials {

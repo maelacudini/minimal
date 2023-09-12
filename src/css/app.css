@@ -72,11 +72,11 @@ h6 {
   margin-left: 0px;
 }
 
-#work,
 #about,
-#contact {
-  margin-top: 100px;
-  margin-bottom: 100px;
+#contact,
+#work {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 #contact {
@@ -86,5 +86,12 @@ h6 {
 @media screen and (max-width: 768px) {
   body {
     padding: 20px;
+  }
+
+  #about,
+  #contact,
+  #work {
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }

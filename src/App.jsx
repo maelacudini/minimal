@@ -2,16 +2,16 @@ import React from "react";
 import "./css/app.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Nav from "./components/Nav";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import { AnimatePresence, motion } from "framer-motion";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <AnimatePresence>
-      <Nav />
+      <Navbar />
       <motion.div
         key="button"
         initial={{ opacity: 0, y: 100 }}
