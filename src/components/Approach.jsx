@@ -15,7 +15,7 @@ const approach = [
   },
   {
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non necessitatibus cum deleniti porro deserunt. Dolorum atque, esse et mollitia.",
+      "I forgot to generate this paragraph, and honestly I'm just way too tired. So imagine you're reading something about having great ideas, creating huge projects and getting super cool reviews.",
   },
   {
     description:

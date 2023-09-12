@@ -60,7 +60,7 @@ const Work = () => {
   return (
     <div id="work">
       <h1 className={style.workTitle}>
-        Simplifying web wxcellence: your brand experience.
+        Simplifying web excellence: your brand experience.
       </h1>
 
       <div className={style.gallery}>

@@ -1,3 +1,4 @@
+import React from "react";
 import "./css/app.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -9,16 +10,17 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const App = () => {
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence>
       <Nav />
       <motion.div
+        key="button"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Work />
-        <About />
-        <Contact />
+        <Work key="work-component" />
+        <About key="about-component" />
+        <Contact key="contact-component" />
       </motion.div>
     </AnimatePresence>
   );

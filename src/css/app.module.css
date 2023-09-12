@@ -150,7 +150,12 @@
   position: absolute;
   bottom: 40px;
   left: 40px;
-  right: 90px;
+  right: 200px;
+}
+
+.colSocial {
+  display: flex;
+  justify-content: end;
 }
 
 .socials {
@@ -162,7 +167,7 @@
 }
 
 .socials > a {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .socials > a:last-child {
@@ -170,8 +175,7 @@
 }
 
 .icon {
-  font-size: 40px;
-  margin-left: 20px;
+  font-size: 30px;
   line-height: 1;
 }
 
@@ -204,6 +208,7 @@
 
   .collapse {
     margin-top: 20px;
+    padding-bottom: 20px !important;
   }
 
   /*work*/
@@ -218,6 +223,7 @@
   .card {
     width: 300px;
     height: 350px;
+    padding: 20px;
   }
 
   .h3desc {
@@ -239,8 +245,34 @@
   }
 
   /*contact*/
+  .cardContact {
+    padding: 30px 20px;
+  }
+
+  .colSocial {
+    display: flex;
+    justify-content: start;
+  }
+
   .icon {
-    font-size: 30px;
+    margin: 0px 20px 0px 0px;
+  }
+
+  .socials {
+    display: block;
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  .socials > a {
+    display: inline;
+  }
+
+  .bottomCardContact {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 
