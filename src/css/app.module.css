@@ -6,7 +6,11 @@
 /*navbar*/
 .nav {
   padding: 40px !important;
-  margin-bottom: 100px;
+  display: block;
+}
+
+.navsmall {
+  display: none;
 }
 
 .brandTitle {
@@ -64,10 +68,6 @@
 }
 
 /*about*/
-.rowAbout {
-  margin-top: 40px;
-}
-
 .me {
   border-radius: 40px;
   width: 100%;
@@ -78,11 +78,12 @@
 
 .descMe {
   font-size: 25px;
+  margin-top: 40px !important;
 }
 
 .skills {
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .skillcontainer {
@@ -131,44 +132,34 @@
 }
 
 /*contact*/
-.contactContainer {
-  display: flex;
-  justify-content: center;
-}
-
 .cardContact {
-  margin-top: 40px;
   border-radius: 40px;
   padding: 40px;
-  width: 100%;
   background-color: rgba(64, 64, 64, 0.6);
   position: relative;
-  display: flex;
-  justify-content: space-between;
 }
 
 .bottomCardContact {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  right: 200px;
-}
-
-.colSocial {
-  display: flex;
-  justify-content: end;
+  right: 40px;
 }
 
 .socials {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
+  justify-content: space-around;
 }
 
 .socials > a {
   margin-bottom: 10px;
+  border-radius: 40px;
+  padding: 20px;
+  border: 1px solid rgba(64, 64, 64, 0.6);
+  display: flex;
+  align-items: center;
 }
 
 .socials > a:last-child {
@@ -176,8 +167,9 @@
 }
 
 .icon {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1;
+  margin-right: 20px;
 }
 
 .contactimage {
@@ -198,47 +190,38 @@
 @media screen and (max-width: 768px) {
   /*all section titles*/
   .sectionTitle {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   /*nav*/
   .nav {
-    position: relative;
-    height: 100vh;
+    padding: 20px !important;
+    display: none;
   }
 
-  .brandTitle {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 0px;
+  .navsmall {
+    display: block;
   }
 
-  .navpills {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    left: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
-  /*navbar*/
-  .navbar {
-    top: 0px !important;
-    margin-top: 0px;
-  }
-
-  .collapse {
-    margin-top: 20px;
-    padding-bottom: 20px !important;
-  }
-
-  /*work*/
   .brandTitle {
     font-size: 30px;
   }
 
+  .scrollinks {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .scrollinks > a {
+    padding: 0.5rem 1rem;
+  }
+
+  /*work*/
   .workTitle {
     font-size: 40px;
   }
@@ -268,34 +251,17 @@
   }
 
   /*contact*/
-  .cardContact {
-    padding: 30px 20px;
-  }
-
   .colSocial {
-    display: flex;
-    justify-content: start;
-  }
-
-  .icon {
-    margin: 0px 10px 0px 0px;
-  }
-
-  .socials {
-    display: block;
-    height: 100%;
+    padding: 0;
     margin-top: 20px;
   }
 
-  .socials > a {
-    display: inline;
+  .cardContact {
+    height: 300px;
   }
 
-  .bottomCardContact {
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  .rowcontact {
+    margin-top: 40px !important;
   }
 }
 

@@ -76,6 +76,7 @@ const Work = () => {
                 src={image.url}
                 alt={image.title}
                 className="img-fluid mb-3"
+                loading="lazy"
               />
               <h3 className={style.h3desc}>{image.title}</h3>
               <p className={style.pdesc}>{image.description.slice(0, 30)}...</p>

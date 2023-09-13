@@ -6,7 +6,6 @@ import Skills from "./Skills";
 const About = () => {
   return (
     <div id="about">
-      <h3 className={style.sectionTitle}>About</h3>
       <div className={`row ${style.rowAbout}`}>
         <div className="col-md-4 d-flex justify-content-center">
           <img
@@ -16,6 +15,7 @@ const About = () => {
           />
         </div>
         <div className="col-md-8">
+          <h3 className={style.sectionTitle}>About</h3>
           <p className={style.descMe}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vel
             earum deleniti harum? Quam eveniet, nesciunt debitis iste
@@ -27,7 +27,7 @@ const About = () => {
 
       <Skills />
       <Approach />
-      <Clients />
+      {/* <Clients /> */}
     </div>
   );
 };
