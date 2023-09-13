@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div id="contact">
       <h3 className={style.sectionTitle}>Contact</h3>
-      <div className={`row m-0 ${style.rowcontact}`}>
+      <div className={`row ${style.rowcontact}`}>
         <div className={`col-md-8 ${style.cardContact}`}>
           <h2>Need a design partner?</h2>
           <p className={style.bottomCardContact}>
