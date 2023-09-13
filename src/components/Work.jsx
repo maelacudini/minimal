@@ -70,16 +70,18 @@ const Work = () => {
               data-bs-toggle="modal"
               data-bs-target={`#modal-${index}`}
               whileHover={{ scale: 1.1 }}
-              className="w-100 nav-link"
+              className={`nav-link ${style.cardlink}`}
             >
               <img
                 src={image.url}
                 alt={image.title}
-                className="img-fluid mb-3"
+                className="img-fluid"
                 loading="lazy"
               />
-              <h3 className={style.h3desc}>{image.title}</h3>
-              <p className={style.pdesc}>{image.description.slice(0, 30)}...</p>
+              <div className={style.descCard}>
+                <h3>{image.title}</h3>
+                <p>{image.description.slice(0, 30)}...</p>
+              </div>
             </motion.a>
             <WorkProjects image={image} index={index} />
           </div>

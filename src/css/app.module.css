@@ -3,7 +3,7 @@
   font-size: 50px;
 }
 
-/*navbar*/
+/*navbar, in smaller devices navsmall shows, in bigger devices nav shows*/
 .nav {
   padding: 40px !important;
   display: block;
@@ -39,24 +39,38 @@
   padding: 40px;
   background-color: rgba(64, 64, 64, 0.6);
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
   margin-right: 20px;
-  text-decoration: none;
   color: white;
+  position: relative;
+}
+
+.cardlink {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .card:last-child {
   margin-right: 0;
 }
 
-/*work projects*/
+/*work projects, modal that pops up after clicking on card*/
+.modaldialog {
+  height: 100% !important;
+  width: 100% !important;
+  padding: 0;
+  margin: 0;
+}
+
 .modalContent {
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(2em);
-  border-radius: 40px;
   color: black;
   padding: 40px;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .tag {
@@ -65,6 +79,9 @@
   color: rgba(255, 255, 255, 0.7) !important;
   padding: 0.5rem 1rem !important;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*about*/
@@ -74,11 +91,17 @@
   height: 400px;
   object-fit: cover;
   object-position: top;
+  margin-top: 40px;
 }
 
 .descMe {
   font-size: 25px;
   margin-top: 40px !important;
+}
+
+.descSmall {
+  position: absolute;
+  bottom: 0;
 }
 
 .skills {
@@ -124,11 +147,21 @@
 .clientList {
   display: flex;
   width: 100% !important;
+  animation: infinitescroll 10s linear infinite;
 }
 
 .clientList h2 {
   white-space: nowrap;
   margin-right: 20px !important;
+}
+
+@keyframes infinitescroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /*contact*/
@@ -166,6 +199,15 @@
   align-items: center;
 }
 
+.socials > a:hover {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 40px !important;
+  color: black !important;
+  backdrop-filter: blur(2em) !important;
+  display: flex;
+  align-items: center;
+}
+
 .socials > a:last-child {
   margin-bottom: 0;
 }
@@ -179,15 +221,6 @@
 .contactimage {
   width: 100% !important;
   height: auto;
-}
-
-@keyframes infinitescroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
 /*in smaller devices*/
@@ -236,10 +269,6 @@
     padding: 20px;
   }
 
-  .h3desc {
-    font-size: 20px;
-  }
-
   /*work projects*/
   .workproject {
     padding: 20px !important;
@@ -250,8 +279,12 @@
   }
 
   /*about*/
-  .rowAbout > div:nth-child(2) {
-    margin-top: 40px !important;
+  .descSmall {
+    position: relative;
+  }
+
+  .descMe {
+    margin-bottom: 20px !important;
   }
 
   /*contact*/

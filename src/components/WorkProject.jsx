@@ -9,11 +9,11 @@ const WorkProjects = ({ image, index }) => {
       aria-labelledby={`#modal-${index}`}
       aria-hidden="true"
     >
-      <div className="modal-dialog modal-lg">
+      <div className={`modal-dialog ${style.modaldialog}`}>
         <div className={`modal-content ${style.modalContent}`}>
           <div className="modal-header">
             <h1 className="modal-title fs-5" id={`#modal-${index}`}>
-              {image.title}
+              <b>{image.title}</b>
             </h1>
             <button
               type="button"
@@ -24,19 +24,23 @@ const WorkProjects = ({ image, index }) => {
           </div>
           <div className="modal-body">
             <img src={image.url} alt="project" width={"100%"} height={"auto"} />
-            <p className="mt-2 mb-4 text-black">{image.description}</p>
 
-            {image.tags.map((tag, index) => (
-              <div className={style.tag} key={index}>
-                <p>{tag}</p>
-              </div>
-            ))}
-
-            <div className="d-flex justify-content-between align-items-center mt-4">
+            <div className="d-flex justify-content-between align-items-center mt-4 mb-4">
               <h5>
                 <b>DATE:</b>
               </h5>
               <h5>{image.date}</h5>
+            </div>
+
+            <p className="text-black mt-4 mb-4">{image.description}</p>
+
+            <div className={style.tags}>
+              {image.tags.map((tag, index) => (
+                <div className={style.tag} key={index}>
+                  <p>{tag}</p>
+                  <p>{index}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
