@@ -1,5 +1,4 @@
 import style from "../css/app.module.css";
-import img5 from "/d5.png";
 
 const Contact = () => {
   return (
