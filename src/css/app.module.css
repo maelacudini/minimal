@@ -181,6 +181,7 @@
   bottom: 40px;
   left: 40px;
   right: 40px;
+  z-index: 0 !important;
 }
 
 .socials {
@@ -240,6 +241,11 @@
     display: block;
   }
 
+  .scrollinks {
+    position: fixed;
+    z-index: 100;
+  }
+
   .brandTitle {
     font-size: 30px;
   }
@@ -265,8 +271,20 @@
 
   .card {
     width: 300px;
-    height: 350px;
+    height: 300px;
     padding: 20px;
+  }
+
+  .cardlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .descCard {
+    display: none;
   }
 
   /*work projects*/

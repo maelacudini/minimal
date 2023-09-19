@@ -79,7 +79,8 @@ h6 {
 }
 
 #about,
-#contact {
+#contact,
+#projects {
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -95,7 +96,8 @@ h6 {
 
   #about,
   #contact,
-  #work {
+  #work,
+  #projects {
     margin-top: 100px;
     margin-bottom: 100px;
   }

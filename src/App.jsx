@@ -8,12 +8,12 @@ import Main from "./components/Main";
 
 const App = () => {
   return (
-    <Fragment>
+    <AnimatePresence>
       <Navbar />
       <AnimatePresence>
         <Main />
       </AnimatePresence>
-    </Fragment>
+    </AnimatePresence>
   );
 };
 

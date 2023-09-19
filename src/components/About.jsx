@@ -1,6 +1,5 @@
 import style from "../css/app.module.css";
 import Approach from "./Approach";
-import Clients from "./Clients";
 import Skills from "./Skills";
 
 const About = () => {
@@ -33,7 +32,6 @@ const About = () => {
 
       <Skills />
       <Approach />
-      <Clients />
     </div>
   );
 };

@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <section>
       <div className={style.navsmall}>
         <nav>
           <h1 className={style.brandTitle}>Minimal</h1>
@@ -98,7 +98,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </section>
   );
 };
 

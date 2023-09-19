@@ -63,30 +63,33 @@ const Work = () => {
         Simplifying web excellence: your brand experience.
       </h1>
 
-      <div className={style.gallery}>
-        {images.map((image, index) => (
-          <div key={index} className={style.card}>
-            <motion.a
-              data-bs-toggle="modal"
-              data-bs-target={`#modal-${index}`}
-              whileHover={{ scale: 1.1 }}
-              className={`nav-link ${style.cardlink}`}
-            >
-              <img
-                src={image.url}
-                alt={image.title}
-                className="img-fluid"
-                loading="lazy"
-              />
-              <div className={style.descCard}>
-                <h3>{image.title}</h3>
-                <p>{image.description.slice(0, 30)}...</p>
-              </div>
-            </motion.a>
-            <WorkProjects image={image} index={index} />
-          </div>
-        ))}
-      </div>
+      <article id="projects">
+        <h3 className={style.sectionTitle}>Our Projects</h3>
+        <div className={style.gallery}>
+          {images.map((image, index) => (
+            <div key={index} className={style.card}>
+              <motion.a
+                data-bs-toggle="modal"
+                data-bs-target={`#modal-${index}`}
+                whileHover={{ scale: 1.1 }}
+                className={`nav-link ${style.cardlink}`}
+              >
+                <img
+                  src={image.url}
+                  alt={image.title}
+                  className="img-fluid"
+                  loading="lazy"
+                />
+                <div className={style.descCard}>
+                  <h3>{image.title}</h3>
+                  <p>{image.description.slice(0, 30)}...</p>
+                </div>
+              </motion.a>
+              <WorkProjects image={image} index={index} />
+            </div>
+          ))}
+        </div>
+      </article>
     </div>
   );
 };
