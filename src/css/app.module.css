@@ -1,12 +1,11 @@
 /*all section titles, so about and contact, work does not have a section title*/
 .sectionTitle {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 /*navbar, in smaller devices navsmall shows, in bigger devices nav shows*/
 .nav {
   padding: 40px !important;
-  display: block;
 }
 
 .navsmall {
@@ -14,14 +13,35 @@
 }
 
 .brandTitle {
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: none;
   color: white;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .brandTitle {
+    left: 40px;
+    top: 40px;
+    right: 40px;
+  }
 }
 
 /*work*/
 .workTitle {
-  font-size: 70px;
+  height: calc(100vh - 2rem);
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+.workTitle > h1 {
+  font-size: 60px;
 }
 
 .gallery {
@@ -36,7 +56,7 @@
   border-radius: 40px;
   width: 400px;
   height: 450px;
-  padding: 40px;
+  padding: 2rem;
   background-color: rgba(64, 64, 64, 0.6);
   flex-shrink: 0;
   margin-right: 20px;
@@ -48,7 +68,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
 }
 
@@ -262,38 +282,6 @@
 
   .scrollinks > a {
     padding: 0.5rem 1rem;
-  }
-
-  /*work*/
-  .workTitle {
-    font-size: 40px;
-  }
-
-  .card {
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-  }
-
-  .cardlink {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-
-  .descCard {
-    display: none;
-  }
-
-  /*work projects*/
-  .workproject {
-    padding: 20px !important;
-  }
-
-  .modalContent {
-    padding: 20px;
   }
 
   /*about*/
